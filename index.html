@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Job Listings</title>
-</head>
-<body>
-  <h1> Find your work.</h1>
-  <div class="filtersection">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  </div>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
 
-  <section>
-    <article>
-      <div>
-       <img src="" alt="">
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <title>Frontend Mentor | Job Listings</title>
+  </head>
+
+  <body>
+    <div class="container-section-filter">
+      <div class="background">
+        <!-- imagen de fondo -->
       </div>
 
-      <div>
-        <div>
-         <span> Photosnap</span>
-         <span> NEW</span>
-         <span> FEATURED</span>
-        </div>
+      <section class="section-filter">
+        <!-- Botones con los filtros -->
 
-        <h3 class="jobTitle"> Senior Frontend Developer</h3>
+        <!-- Boton para limpiar -->
+      </section>
+    </div>
 
-        <div>
-          <span>1d Ago ·</span>
-          <span> Full Time ·</span>
-          <span> Usa Only</span>
-        </div>
-
-      </div>
-
-      <div>
+    <main>
+      <section id="container-lists-job">
+        <article class="card-job isFeatured">
+          <div class="container-card-info">
+            <img src="./images/photosnap.svg" alt="">
+            <div class="card-info">
+              <div class="container-card-header">
+                <p class="company-name"> Photosnap</p>
+                <span class="new-job"> NEW!</span>
+                <span class="featured"> FEATURED</span>
+              </div>
+              <h4 class="position-job">Senior Frontend Developer</h4>
+              <span class="detail-job postedAt"> 1d ago </span> 
+              <span class="detail-job contract"> Full time</span>
+              <span class="detail-job location"> USA only</span>
+            </div>
+          </div>
+          <hr>
+          <div class="container-card-buttons">
+            <button class="card-button role"> Frontend </button>
+            <button class="card-button level"> Senior </button>
+            <button class="card-button languages"> HTML</button>
+            <button class="card-button languages"> CSS </button>
+            <button class="card-button languages"> JavaScript </button>
+          </div>
+        </article>
        
+
+
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Lina Alvarado</a>.
       </div>
-    </article>
-  </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </main>
 
-
-  <script src="/src/index.js"></script>
-</body>
+    <script src="/src/index.js"></script>
+  </body>
 </html>

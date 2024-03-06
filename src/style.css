@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colores */
+  --PrimaryColor: hsl(180, 29%, 50%);
+  --Neutral-background: hsl(180, 28%, 93%);
+  --Neutral-filterTablets: hsl(0, 0%, 100%);
+  --Light-grey: hsl(180, 8%, 52%);
+  --Dark-grey: hsl(180, 14%, 20%);
+
+  --Font-family: "League Spartan", sans-serif;
+  --Text-font-size: 15px;
+}
+
+body {
+  font-family: var(--Font-family);
+  background-color: var(--Neutral-background);
+}
+
+.background {
+  background-image: url(../images/bg-header-desktop.svg);
+  background-position: 90% 0%;
+  background-color: var(--PrimaryColor);
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 155px;
+}
+
+.container-section-filter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-filter {
+  position: absolute;
+  top: 100px;
+  background-color: var(--Neutral-filterTablets);
+  width: 90%;
+  height: 120px;
+  box-shadow: 0px 1px 30px 1px hsla(180, 22%, 43%, 0.288);
+  border-radius: 8px;
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+}
+
+#container-lists-job {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.card-job {
+  background-color: var(--Neutral-filterTablets);
+  padding: 1rem;
+}
+
+.isFeatured {
+  border-left: solid 5px hsl(180, 29%, 50%);
+}
+
+.container-card-info {
+  margin-bottom: 1rem;
+}
+
+.container-card-info img {
+  height: 45px;
+}
+
+.card-info h4 {
+  margin-bottom: 1rem;
+}
+
+.detail-job {
+  margin-right: 5px;
+  color: var(--Light-grey);
+}
+
+.container-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.company-name {
+  font-weight: bold;
+  color: var(--PrimaryColor);
+  margin-right: 1rem;
+}
+
+.container-card-header > span {
+  padding: 8px;
+  border-radius: 16px;
+  font-weight: bold;
+  color: var(--Neutral-background);
+  margin-right: 5px;
+}
+
+.new-job {
+  background-color: var(--PrimaryColor);
+}
+
+.featured {
+  background-color: var(--Dark-grey);
+}
+
+.container-card-buttons {
+  margin-top: 1rem;
+}
+
+.card-button{
+  padding: 0.8rem;
+  background-color: var(--Neutral-background);
+  border: none;
+  border-radius: 4px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  color:var(--PrimaryColor);
+  margin: 0.5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+}
